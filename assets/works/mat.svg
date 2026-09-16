@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f7f3e8"/>
+  <g transform="translate(34 70)">
+    <rect x="0" y="0" width="300" height="150" rx="6" fill="#e3c789" stroke="#8a6a45" stroke-width="3"/>
+    <g stroke-width="3" fill="none">
+      <g stroke="#c89b4a">
+        <path d="M24 24 l36 24 M60 24 l-36 24 M60 24 l36 24 M96 24 l-36 24 M96 24 l36 24 M132 24 l-36 24 M132 24 l36 24 M168 24 l-36 24 M168 24 l36 24 M204 24 l-36 24 M204 24 l36 24 M240 24 l-36 24 M240 24 l36 24 M276 24 l-30 20"/>
+        <path d="M24 72 l36 24 M60 72 l-36 24 M60 72 l36 24 M96 72 l-36 24 M96 72 l36 24 M132 72 l-36 24 M132 72 l36 24 M168 72 l-36 24 M168 72 l36 24 M204 72 l-36 24 M204 72 l36 24 M240 72 l-36 24 M240 72 l36 24 M276 72 l-30 20"/>
+      </g>
+      <g stroke="#a98b55">
+        <path d="M24 48 l36 24 M60 48 l-36 24 M60 48 l36 24 M96 48 l-36 24 M96 48 l36 24 M132 48 l-36 24 M132 48 l36 24 M168 48 l-36 24 M168 48 l36 24 M204 48 l-36 24 M204 48 l36 24 M240 48 l-36 24 M240 48 l36 24 M276 48 l-30 20"/>
+        <path d="M24 96 l36 24 M60 96 l-36 24 M60 96 l36 24 M96 96 l-36 24 M96 96 l36 24 M132 96 l-36 24 M132 96 l36 24 M168 96 l-36 24 M168 96 l36 24 M204 96 l-36 24 M204 96 l36 24 M240 96 l-36 24 M240 96 l36 24 M276 96 l-30 20"/>
+      </g>
+    </g>
+    <rect x="8" y="8" width="284" height="134" rx="4" fill="none" stroke="#5b4630" stroke-width="6"/>
+    <rect x="14" y="14" width="272" height="122" rx="3" fill="none" stroke="#c89b4a" stroke-width="2" stroke-dasharray="8 6"/>
+  </g>
+  <ellipse cx="334" cy="145" rx="16" ry="76" fill="#f1e6c8" stroke="#8a6a45" stroke-width="3"/>
+  <g stroke="#c89b4a" stroke-width="2">
+    <line x1="334" y1="76" x2="334" y2="214"/>
+  </g>
+</svg>

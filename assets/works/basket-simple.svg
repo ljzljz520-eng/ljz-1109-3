@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f7f3e8"/>
+  <g stroke-linecap="round">
+    <path d="M140 110 Q200 30 260 110" fill="none" stroke="#8a6a45" stroke-width="7"/>
+    <path d="M140 110 Q200 42 260 110" fill="none" stroke="#c89b4a" stroke-width="3"/>
+  </g>
+  <path d="M100 110 H300 L278 248 H122 Z" fill="#e3c789" stroke="#8a6a45" stroke-width="3"/>
+  <g stroke="#c89b4a" stroke-width="4">
+    <line x1="108" y1="134" x2="292" y2="134"/>
+    <line x1="112" y1="158" x2="288" y2="158"/>
+    <line x1="116" y1="182" x2="284" y2="182"/>
+    <line x1="120" y1="206" x2="280" y2="206"/>
+    <line x1="124" y1="230" x2="276" y2="230"/>
+  </g>
+  <g stroke="#a98b55" stroke-width="3" opacity="0.85">
+    <line x1="124" y1="112" x2="126" y2="246"/>
+    <line x1="152" y1="112" x2="151" y2="246"/>
+    <line x1="180" y1="112" x2="178" y2="246"/>
+    <line x1="200" y1="112" x2="200" y2="246"/>
+    <line x1="220" y1="112" x2="222" y2="246"/>
+    <line x1="248" y1="112" x2="249" y2="246"/>
+    <line x1="276" y1="112" x2="274" y2="246"/>
+  </g>
+  <rect x="92" y="100" width="216" height="16" rx="8" fill="#5b4630"/>
+  <rect x="96" y="102" width="208" height="4" rx="2" fill="#8a6a45"/>
+</svg>

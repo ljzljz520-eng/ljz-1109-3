@@ -1,0 +1,109 @@
+/* ===== 编法动画舞台 ===== */
+.weave-stage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+}
+
+.weave-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weave-card h3 { margin: 0 0 2px; font-size: 1.22rem; }
+.weave-card .weave-sub { margin: 0 0 12px; color: var(--gold); font-size: 0.86rem; }
+.weave-card > p { margin: 0 0 14px; font-size: 0.92rem; color: var(--ink-soft); }
+
+.weave-svg-wrap {
+  background:
+    repeating-linear-gradient(45deg, rgba(169, 192, 138, 0.12) 0 8px, transparent 8px 16px),
+    var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 8px;
+  margin-bottom: 12px;
+}
+.weave-svg-wrap svg { width: 100%; height: auto; display: block; border-radius: 6px; }
+
+/* 动画元素 */
+.wv-piece { transition: opacity 0.25s ease; }
+.wv-row-hidden .wv-piece { opacity: 0; }
+.wv-tuck {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+  transition: transform 0.5s cubic-bezier(0.5, 0, 0.3, 1);
+}
+.wv-tuck.is-bent { transform: rotate(180deg); }
+.wv-rim-hint { stroke-dasharray: 5 4; }
+
+/* 图例 */
+.legend { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; font-size: 0.82rem; color: var(--ink-soft); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid rgba(0,0,0,0.15); }
+
+/* 控制条 */
+.player-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.player-controls button {
+  border: 1px solid var(--bamboo-700);
+  background: var(--white);
+  color: var(--bamboo-800);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  transition: background 0.15s;
+}
+.player-controls button:hover { background: var(--bamboo-100); }
+.player-controls button.primary {
+  background: var(--bamboo-800);
+  color: var(--white);
+  min-width: 72px;
+}
+.player-controls button.primary:hover { background: var(--bamboo-700); }
+.player-controls label { font-size: 0.84rem; color: var(--ink-soft); display: inline-flex; align-items: center; gap: 4px; }
+.player-controls select {
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 4px 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--ink);
+}
+
+/* 步骤点 */
+.step-dots { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.step-dot {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--bamboo-300);
+  background: var(--white);
+  color: var(--bamboo-700);
+  font-size: 0.72rem;
+  display: grid;
+  place-items: center;
+  transition: all 0.15s;
+}
+.step-dot:hover { border-color: var(--bamboo-700); }
+.step-dot.is-done { background: var(--bamboo-300); border-color: var(--bamboo-300); color: var(--bamboo-900); }
+.step-dot.is-current { background: var(--gold); border-color: var(--gold); color: #2a2110; font-weight: 700; }
+
+.weave-status {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--bamboo-800);
+  background: var(--bamboo-100);
+  border-radius: 999px;
+  padding: 6px 16px;
+  align-self: flex-start;
+}

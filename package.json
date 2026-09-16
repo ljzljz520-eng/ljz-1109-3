@@ -1,0 +1,19 @@
+{
+  "name": "bamboo-weaving-hall",
+  "version": "1.0.0",
+  "description": "竹编技艺展示馆 — 历史 / 材料 / 编法 / 作品 / 师傅故事",
+  "type": "module",
+  "scripts": {
+    "dev": "node tools/serve.js",
+    "build": "node tools/build.js",
+    "preview": "node tools/serve.js dist",
+    "validate": "node tools/validate-data.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  }
+}

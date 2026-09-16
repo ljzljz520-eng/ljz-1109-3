@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>竹编技艺展示馆</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232f4a33'/%3E%3Cpath d='M9 6v20M16 6v20M23 6v20' stroke='%23d9b25e' stroke-width='2'/%3E%3Cpath d='M6 11h20M6 17h20M6 23h20' stroke='%238aa46b' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="src/styles/base.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/weaves.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="hero">
+      <p class="hero-kicker">非物质文化遗产 · 传统手工艺</p>
+      <h1 class="hero-title">竹编技艺展示馆</h1>
+      <p class="hero-sub">一挑一压间，编织千年生活。从一根毛竹到一件器物，跟随经纬的节奏，读懂竹编的历史、材料、编法与匠人。</p>
+      <nav class="hero-nav" aria-label="栏目导航">
+        <a href="#history" data-route="history">历史</a>
+        <a href="#materials" data-route="materials">材料</a>
+        <a href="#weaves" data-route="weaves">编法</a>
+        <a href="#works?type=all" data-route="works">作品</a>
+        <a href="#masters" data-route="masters">师傅故事</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="history" class="section" data-section="history" hidden>
+      <div class="section-head">
+        <h2>历史源流</h2>
+        <p>竹编起源于先民的日常所需，七千年来与中国人的生活同行。</p>
+      </div>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section id="materials" class="section" data-section="materials" hidden>
+      <div class="section-head">
+        <h2>材料与备料</h2>
+        <p>良器先择竹。选竹、刮青、破竹、启篾、煮篾、染色，每道工序决定编织的品质。</p>
+      </div>
+      <h3 class="block-title">常用竹种</h3>
+      <div id="bamboo-grid" class="card-grid"></div>
+      <h3 class="block-title">备料工序</h3>
+      <ol id="process-list" class="process-list"></ol>
+      <h3 class="block-title">篾的三种规格</h3>
+      <div id="strip-grid" class="card-grid strip-grid"></div>
+    </section>
+
+    <section id="weaves" class="section" data-section="weaves" hidden>
+      <div class="section-head">
+        <h2>编法演示</h2>
+        <p>播放动画，逐“挑”逐“压”观察经纬如何成形。三种基本编法皆以步骤事件驱动，可随时暂停、复位。</p>
+      </div>
+      <div id="weave-stage" class="weave-stage"></div>
+      <h3 class="block-title">更多常见编法</h3>
+      <div id="weave-extra" class="card-grid"></div>
+    </section>
+
+    <section id="works" class="section" data-section="works" hidden>
+      <div class="section-head">
+        <h2>馆藏作品</h2>
+        <p>按器物类型筛选。筛选条件会写入地址栏，可复制链接分享你的视角。</p>
+      </div>
+      <div id="works-filters" class="filter-bar" role="group" aria-label="器物类型筛选"></div>
+      <p id="works-count" class="works-count" aria-live="polite"></p>
+      <div id="works-grid" class="works-grid"></div>
+      <p id="works-empty" class="works-empty" hidden>暂无此类馆藏。</p>
+    </section>
+
+    <section id="masters" class="section" data-section="masters" hidden>
+      <div class="section-head">
+        <h2>师傅故事</h2>
+        <p>竹编的技艺留在手上，也留在人的故事里。</p>
+      </div>
+      <div id="masters-list" class="masters-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>竹编技艺展示馆 · 静态展览 Demo · 所有图片均为内联 SVG 绘制</p>
+    <p><a href="#top">回到顶部</a></p>
+  </footer>
+
+  <script type="module" src="src/interaction/main.js"></script>
+</body>
+</html>
